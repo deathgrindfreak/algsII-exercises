@@ -95,5 +95,8 @@ public class WordNet {
    // do unit testing of this class
    public static void main(String[] args) {
 	   WordNet wn = new WordNet("synsets100-subgraph.txt", "hypernyms100-subgraph.txt");
+	   System.out.println("Distance: " + wn.distance("CRP", "thing"));
+	   System.out.println("Is Noun?: " + wn.isNoun("CRP"));
+	   System.out.println("Nouns: " + wn.nouns());
    }
 }
