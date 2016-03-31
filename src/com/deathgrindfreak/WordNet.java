@@ -36,6 +36,10 @@ public class WordNet {
 		   String[] v = edge.split(",");
 		   hyperGraph.addEdge(Integer.valueOf(v[0]), Integer.valueOf(v[1]));
 	   }
+	   
+	   // TODO Check if hyperGraph is rooted DAG
+	   if (false)
+	   		throw new IllegalArgumentException("Graph must be a rooted DAG!");
    }
 
    // returns all WordNet nouns
